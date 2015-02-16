@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <include layout="@layout/view_feed_toolbar"
+        android:id="@+id/toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:scrollbars="none"
+        />
+
+    <ImageButton
+        android:id="@+id/btnCreate"
+        android:layout_width="@dimen/btn_fab_size"
+        android:layout_height="@dimen/btn_fab_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/btn_fab_margins"
+        android:layout_marginRight="@dimen/btn_fab_margins"
+        android:layout_marginEnd="@dimen/btn_fab_margins"
+        android:src="@drawable/ic_instagram_white"
+        android:elevation="@dimen/default_elevation"
+        android:background="@drawable/btn_fab_deafult"
+        android:textSize="28sp"/>
+
+
+</RelativeLayout>
